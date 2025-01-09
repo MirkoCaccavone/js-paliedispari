@@ -9,6 +9,7 @@
 
 // esecuzione
 
+
 // chiedo all'utente di scegliere pari o dispari
 const userChoice = prompt("Scegli pari o dispari");
 console.log(userChoice);
@@ -17,17 +18,17 @@ console.log(userChoice);
 const userNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
 console.log(userNumber);
 
+// sommo i due numeri
+let sum = userNumber + randomNumber();
+console.log(sum);
+
 // creo una funzione per generare un numero random da 1 a 5
 function randomNumber(){
-    random = Math.floor(Math.random() * 5) + 1;
-    return random;
+    let numRandom = Math.floor(Math.random() * 5) + 1;
+    console.log (numRandom);
+    return numRandom;
 }
-console.log(randomNumber());
-
-
-// sommo i due numeri
-let sum = userNumber + random;
-console.log(sum);
+    
 
 
 // creo una funzione per stabilire se la somma dei due numeri e pari o dispari
